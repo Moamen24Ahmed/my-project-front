@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row g-3">
+    @for (item of products; track $index) {
+    <div class="col-md-4">
+      <div class="bg-body-tertiary border-0 p-3 position-relative">
+        <div class="text-center">
+          <img [src]="item.thumbnail" alt="" />
+        </div>
+        <h3>Name:{{ item.title }}</h3>
+        <h4>price: {{ item.price }}</h4>
+        <!-- <h4>price: {{ item.description }}</h4> -->
+        <h5>Category: {{ item.category }}</h5>
+        <h5>Category: {{ item.rating }}</h5>
+        <h5>Category: {{ item.tags }}</h5>
+        <h5>Category: {{ item.brand }}</h5>
+        <h5>Category: {{ item.weight }}</h5>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
